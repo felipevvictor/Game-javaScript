@@ -9,13 +9,16 @@ var criaMosquitoTempo = 1500
 var nivel = window.location.search
 nivel = nivel.replace('?', '')
 
-if(nivel === 'normal') {
+if(nivel === 'facil'){
+	//2000
+	criaMosquitoTempo = 2000
+}else if(nivel === 'normal') {
 	//1500
 	criaMosquitoTempo = 1500
 } else if(nivel === 'dificil') {
 	//1000
 	criaMosquitoTempo = 1000
-} else if (nivel === 'chucknorris') {
+} else if (nivel === 'lendário') {
 	//750
 	criaMosquitoTempo = 750
 }
